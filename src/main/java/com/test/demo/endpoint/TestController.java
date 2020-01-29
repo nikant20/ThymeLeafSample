@@ -26,5 +26,12 @@ public class TestController {
 		mv.addObject("names", response);
 		return mv;
 	}
+	
+	@GetMapping("/signin")
+	public String signIn(Model model) {
+		return "index";
+	}
+	
+	
 
 }
